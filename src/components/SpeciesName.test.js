@@ -8,7 +8,7 @@ describe('Props are passed', () => {
         const requiredProps = {
             id: 'speciesName',
             value: 'humans',
-            label: 'Species Name: THIS BREAKS LABEL TEST!!',
+            label: 'Species Name:',
         
 
         };
