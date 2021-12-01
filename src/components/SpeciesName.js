@@ -1,5 +1,5 @@
 const SpeciesName = ( { speciesName, onChangeSpeciesName } ) => {
-
+console.log(speciesName);
     return (
         <div> 
             <label htmlFor='speciesName'>Species Name:</label> 

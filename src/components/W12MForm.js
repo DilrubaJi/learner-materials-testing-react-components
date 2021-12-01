@@ -27,7 +27,7 @@ const W12MForm = () => {
 			<WhatIs whatIs={whatIs} onChangeWhatIs={(e) => setWhatIs(e.target.value)} />
 			<ReasonForSparing reasonForSparing={reasonForSparing} onChangeReasonForSparing={(e) => setReasonForSparing(e.target.value)} />
 			<Submit showResults={showResults} submit={submit} onclickSubmit={(e) => setSubmit(setShowResults(true))} />
-			{ showResults ? <FormResults speciesName={speciesName} planetName={planetName} numberOfBeings={numberOfBeings} whatIs={whatIs} reasonForSparing={reasonForSparing} /> : null}
+			{ showResults ? <FormResults planetName={planetName} numberOfBeings={numberOfBeings} whatIs={whatIs} reasonForSparing={reasonForSparing} /> : null}
 		</section>
 	);
 };
