@@ -1,5 +1,4 @@
 import './App.css';
-import FormResults from './components/FormResults';
 import W12MForm from './components/W12MForm';
 
 function App() {
