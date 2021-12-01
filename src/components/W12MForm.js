@@ -6,6 +6,7 @@ import SpeciesName from './SpeciesName';
 import W12MHeader from './W12MHeader';
 import ReasonForSparing from './ReasonForSparing';
 import Submit from './Submit';
+import FormResults from './FormResults';
 
 const W12MForm = () => {
 	const [speciesName, setSpeciesName] = useState('humans');
@@ -24,7 +25,7 @@ const W12MForm = () => {
 			<WhatIs whatIs={whatIs} onChangeWhatIs={(e) => setWhatIs(e.target.value)} />
 			<ReasonForSparing reasonForSparing={reasonForSparing} onChangeReasonForSparing={(e) => setReasonForSparing(e.target.value)} />
 			<Submit submit={submit} onclickSubmit={(e) => setSubmit(alert(speciesName + planetName))} />
-			{console.log(speciesName)}
+			<FormResults speciesName={speciesName} planetName={planetName} numberOfBeings={numberOfBeings} whatIs={whatIs} reasonForSparing={reasonForSparing} />
 
 		</section>
 	);
