@@ -8,3 +8,11 @@ test('renders label text', () => {
     );
     expect(labelText).toBeInTheDocument();
 });
+
+test('input field values', () => {
+    render(<SpeciesName />);
+    const inputValue = screen.getByText(
+        /humans/i
+    );
+    expect(inputValue).toBeInTheDocument();
+});
