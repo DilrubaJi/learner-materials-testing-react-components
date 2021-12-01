@@ -14,7 +14,7 @@ const W12MForm = () => {
 	const [numberOfBeings, setNumberOfBeings] = useState('8 billion');
 	const [whatIs, setWhatIs] = useState('4');
 	const [reasonForSparing, setReasonForSparing] = useState('humanity');
-	const [submit, setSubmit] = useState('submit');
+	const [submit, setSubmit] = useState('Submit');
 	const [showResults, setShowResults] = useState(false);
 
 
