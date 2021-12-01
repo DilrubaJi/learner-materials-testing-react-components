@@ -14,11 +14,9 @@ const W12MForm = () => {
 	const [numberOfBeings, setNumberOfBeings] = useState('8 billion');
 	const [whatIs, setWhatIs] = useState('4');
 	const [reasonForSparing, setReasonForSparing] = useState('humanity');
-	const [submit, setSubmit] = useState('Submit');
-	// const [formResults, setFormResults] = useState(false);
+	const [submit, setSubmit] = useState('submit');
 	const [showResults, setShowResults] = useState(false);
-	// const onClick = () => setShowResults(true)
-	// const showResults = false;
+
 
 	return (
 		<section className='w12MForm'>
@@ -30,9 +28,7 @@ const W12MForm = () => {
 			<ReasonForSparing reasonForSparing={reasonForSparing} onChangeReasonForSparing={(e) => setReasonForSparing(e.target.value)} />
 			<Submit showResults={showResults} submit={submit} onclickSubmit={(e) => setSubmit(setShowResults(true))} />
 			{ showResults ? <FormResults speciesName={speciesName} planetName={planetName} numberOfBeings={numberOfBeings} whatIs={whatIs} reasonForSparing={reasonForSparing} /> : null}
-            {/* { showResults ? < FormResults  /> : null } */}
 		</section>
-
 	);
 };
 
